@@ -16,3 +16,7 @@
 **PHP**
 1. Problem: The DatCrusher site is rendering the Datbooster Logo.
 2. Add a method to the DatBookmarks Class that deletes all bookmarks from a user profile.
+
+**Environment**
+1. Commit your changes to you branch
+2. Push your branch up to the repo
