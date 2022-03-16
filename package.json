@@ -1,0 +1,66 @@
+{
+  "name": "dat-booster",
+  "version": "1.5.0",
+  "description": "Avada child theme customized for DAT Booster",
+  "scripts": {
+    "build": "webpack --env=site=booster-staging",
+    "dist": "webpack --env=site=booster-production",
+    "watch": "webpack --watch --env=site=booster-staging",
+    "cwpdev": "webpack --watch --env=site=booster-staging",
+    "staging": "webpack --env=site=booster-staging",
+    "crusher": "webpack --env=site=crusher-production",
+    "crusherstaging": "webpack --env=site=crusher-staging",
+    "crusherwatch": "webpack --env=site=crusher-staging --watch",
+    "oat": "webpack --env=site=oat-production",
+    "oatstaging": "webpack --env=site=oat-staging",
+    "oatwatch": "webpack --env=site=oat-staging --watch",
+    "pat": "webpack --env=site=pat-production",
+    "patstaging": "webpack --env=site=pat-staging",
+    "test": "jest --env=jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iwitness-design/dat-booster.git"
+  },
+  "author": "iWitness Design",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwitness-design/dat-booster/issues"
+  },
+  "homepage": "https://github.com/iwitness-design/dat-booster#readme",
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "datatables.net": "^1.10.20",
+    "flatpickr": "^4.6.3",
+    "inputmask": "^5.0.3",
+    "lodash": "^4.17.21",
+    "redux": "^4.1.2",
+    "slick-carousel": "^1.8.1",
+    "uikit": "^3.3.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/register": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "jest": "^27.3.1",
+    "jquery": "^3.6.0",
+    "jsdom": "^18.1.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "jest": {
+    "testPathIgnorePatterns": [
+      "dummy",
+      "calculator"
+    ]
+  }
+}
